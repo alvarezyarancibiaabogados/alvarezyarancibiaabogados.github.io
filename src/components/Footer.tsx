@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo y descripción */}
           <div className="md:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">Lexinnova</h3>
+            <h3 className="text-3xl font-bold mb-4">Alvarez y Arancibia</h3>
             <p className="text-background/80 mb-4">
               Nueva generación de servicios legales para la era digital. 
               Flexibilidad, agilidad y tecnología al servicio de tu negocio.
@@ -26,8 +26,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <a href="mailto:contacto@lexinnova.cl" className="hover:text-accent transition-smooth">
-                  contacto@lexinnova.cl
+                <a href="mailto:alvarezyarancibiaabogados@gmail.com" className="hover:text-accent transition-smooth">
+                  alvarezyarancibiaabogados@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -70,7 +70,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-background/20 pt-8 text-center text-background/60">
-          <p>© {currentYear} Lexinnova. Todos los derechos reservados.</p>
+          <p>© {currentYear} Alvarez y Arancibia. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

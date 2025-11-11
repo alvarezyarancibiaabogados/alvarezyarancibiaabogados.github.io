@@ -46,7 +46,7 @@ const Navbar = () => {
               isScrolled ? "text-primary" : "text-white"
             }`}
           >
-            Lexinnova
+            Alvarez y Arancibia
           </button>
 
           {/* Desktop Navigation */}

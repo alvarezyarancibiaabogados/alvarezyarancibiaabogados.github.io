@@ -5,7 +5,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "Lexinnova fue clave en nuestra primera ronda de levantamiento de capital. Su agilidad y comprensión del ecosistema startup nos ahorró tiempo y recursos valiosos.",
+        "Alvarez y Arancibia fue clave en nuestra primera ronda de levantamiento de capital. Su agilidad y comprensión del ecosistema startup nos ahorró tiempo y recursos valiosos.",
       author: "CEO de una Fintech Chilena",
     },
     {

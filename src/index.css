@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lexinnova Design System - Legal Firm Website */
+/* Alvarez y Arancibia Design System - Legal Firm Website */
 
 @layer base {
   :root {
-    /* Brand Colors - Lexinnova */
+    /* Brand Colors - Alvarez y Arancibia */
     --background: 0 0% 100%; /* White */
     --foreground: 210 10% 20%; /* Dark gray for text #343A40 equivalent */
 
@@ -43,7 +43,7 @@
 
     --radius: 0.75rem;
 
-    /* Custom tokens for Lexinnova */
+    /* Custom tokens for Alvarez y Arancibia */
     --law-dark: 210 68% 18%; /* #0D2C4D */
     --law-blue: 211 100% 50%; /* #007BFF */
     --law-gold: 38 97% 54%; /* #FCA311 */

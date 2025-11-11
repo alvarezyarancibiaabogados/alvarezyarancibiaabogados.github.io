@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lexinnova - Asesoría Legal para la Era Digital | Abogados en Chile</title>
+    <title>Alvarez y Arancibia - Asesoría Legal para la Era Digital | Abogados en Chile</title>
     <meta name="description" content="Firma de abogados moderna en Chile. Combinamos experiencia legal con tecnología para startups, protección de datos y asesoría corporativa flexible." />
-    <meta name="author" content="Lexinnova" />
+    <meta name="author" content="Alvarez y Arancibia" />
     <meta name="keywords" content="abogados chile, asesoría legal, startups, venture capital, protección de datos, tecnología legal, contratos inteligentes" />
 
-    <meta property="og:title" content="Lexinnova - Asesoría Legal para la Era Digital" />
+    <meta property="og:title" content="Alvarez y Arancibia - Asesoría Legal para la Era Digital" />
     <meta property="og:description" content="Nueva generación de servicios legales. Flexibilidad, agilidad y tecnología al servicio de tu negocio." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Lexinnova - Asesoría Legal para la Era Digital" />
+    <meta name="twitter:title" content="Alvarez y Arancibia - Asesoría Legal para la Era Digital" />
     <meta name="twitter:description" content="Firma de abogados moderna en Chile especializada en startups y tecnología" />
     <meta name="twitter:image" content="https://images.unsplash.com/photo-497366216548-37526070297c?auto=format&fit=crop&q=80" />
   </head>
@@ -22,5 +22,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Script para GitHub Pages SPA routing -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </body>
 </html>
