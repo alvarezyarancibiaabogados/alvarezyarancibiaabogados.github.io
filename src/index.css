@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lexinnova Design System - Legal Firm Website */
+
+@layer base {
+  :root {
+    /* Brand Colors - Lexinnova */
+    --background: 0 0% 100%; /* White */
+    --foreground: 210 10% 20%; /* Dark gray for text #343A40 equivalent */
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 10% 20%;
+
+    /* Primary - Dark Blue #0D2C4D */
+    --primary: 210 68% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Bright Blue #007BFF */
+    --secondary: 211 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent - Gold/Orange #FCA311 */
+    --accent: 38 97% 54%;
+    --accent-foreground: 210 68% 18%;
+
+    /* Muted - Light Gray #F8F9FA */
+    --muted: 210 17% 98%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 68% 18%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for Lexinnova */
+    --law-dark: 210 68% 18%; /* #0D2C4D */
+    --law-blue: 211 100% 50%; /* #007BFF */
+    --law-gold: 38 97% 54%; /* #FCA311 */
+    --law-gray-light: 210 17% 98%; /* #F8F9FA */
+    
+    /* Shadows */
+    --shadow-card: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-navbar: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 210 68% 18%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 68% 18%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 68% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 68% 18%;
+
+    --secondary: 211 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 38 97% 54%;
+    --accent-foreground: 210 68% 18%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 212 27% 84%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-navbar {
+    box-shadow: var(--shadow-navbar);
+  }
+}
