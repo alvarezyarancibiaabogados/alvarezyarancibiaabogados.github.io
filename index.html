@@ -1,39 +1,232 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alvarez y Arancibia - Asesoría Legal para la Era Digital | Abogados en Chile</title>
-    <meta name="description" content="Firma de abogados moderna en Chile. Combinamos experiencia legal con tecnología para startups, protección de datos y asesoría corporativa flexible." />
-    <meta name="author" content="Alvarez y Arancibia" />
-    <meta name="keywords" content="abogados chile, asesoría legal, startups, venture capital, protección de datos, tecnología legal, contratos inteligentes" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvarez y Arancibia - Asesoría Legal para la Era Digital</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <meta property="og:title" content="Alvarez y Arancibia - Asesoría Legal para la Era Digital" />
-    <meta property="og:description" content="Nueva generación de servicios legales. Flexibilidad, agilidad y tecnología al servicio de tu negocio." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" />
+    <!-- Tu hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Alvarez y Arancibia - Asesoría Legal para la Era Digital" />
-    <meta name="twitter:description" content="Firma de abogados moderna en Chile especializada en startups y tecnología" />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-497366216548-37526070297c?auto=format&fit=crop&q=80" />
-  </head>
+    <!-- =======================
+    ENCABEZADO Y NAVEGACIÓN
+    ======================== -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Álvarez y Arancibia</a>
+            <div class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#servicios" class="nav-link">Nuestros Servicios</a></li>
+                    <li class="nav-item"><a href="#como-trabajamos" class="nav-link">Cómo Trabajamos</a></li>
+                    <li class="nav-item"><a href="#casos-de-exito" class="nav-link">Casos de Éxito</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- Script para GitHub Pages SPA routing -->
-    <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-  </body>
+    <main>
+        <!-- =======================
+        SECCIÓN INICIO (HERO)
+        ======================== -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Asesoría Legal para la Era Digital.</h1>
+                <p>Combinamos experiencia legal con tecnología y agilidad para entregar soluciones eficientes y centradas en tu negocio.</p>
+                <a href="#como-trabajamos" class="cta-button">Descubre Nuestro Enfoque <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <a href="#servicios" class="scroll-down-indicator">
+                <div class="mouse"></div>
+            </a>
+        </section>
+
+        <!-- =======================
+        SECCIÓN SERVICIOS
+        ======================== -->
+        <section id="servicios" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Soluciones Legales a tu Medida</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>Startups y Venture Capital</h3>
+                        <p>Desde la constitución hasta rondas de financiamiento, ofrecemos una asesoría ágil que entiende la velocidad de tu crecimiento. Estructuramos legalmente tu innovación.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Tecnología y Protección de Datos</h3>
+                        <p>Navegamos la complejidad regulatoria de la economía digital. Te ayudamos a cumplir con la normativa de protección de datos y a proteger tus activos digitales.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="icon-wrapper">
+                             <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <h3>Contratos Inteligentes y Asesoría Corporativa</h3>
+                        <p>Modernizamos tu área legal con contratos eficientes y una asesoría corporativa continua. Nos integramos como tu equipo legal externo, flexible y a demanda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================
+        SECCIÓN CÓMO TRABAJAMOS
+        ======================== -->
+        <section id="como-trabajamos" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nuestro Modelo: La Nueva Forma de Entender el Derecho</h2>
+                    <p class="subtitle">Enfoque innovador que combina experiencia legal con metodologías ágiles</p>
+                </div>
+                <div class="feature-layout">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=2070&auto=format&fit=crop" alt="Equipo colaborando en una reunión">
+                    </div>
+                    <div class="feature-text">
+                        <div class="feature-icon">
+                           <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Tu Negocio es el Centro</h3>
+                        <p>Nos sumergimos en tus objetivos para ofrecer soluciones que no solo son legalmente sólidas, sino que también impulsan tu estrategia. No somos solo tus abogados, somos tus socios.</p>
+                    </div>
+                </div>
+                <div class="feature-layout reverse">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Gráficos de datos y tecnología">
+                    </div>
+                    <div class="feature-text">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>Tecnología para la Eficiencia</h3>
+                        <p>Utilizamos plataformas de gestión de proyectos y comunicación en tiempo real para darte total visibilidad sobre nuestros avances. Automatizamos procesos para reducir costos y tiempos de respuesta.</p>
+                    </div>
+                </div>
+                <div class="feature-layout">
+                    <div class="feature-image">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop" alt="Equipo de trabajo en entorno dinámico">
+                    </div>
+                    <div class="feature-text">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3>Flexibilidad y Agilidad</h3>
+                        <p>Operamos con una estructura liviana que nos permite adaptarnos a tus necesidades. Ofrecemos modelos de precios alternativos y transparentes, desde igualas mensuales hasta honorarios por proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =======================
+        SECCIÓN CASOS DE ÉXITO
+        ======================== -->
+        <section id="casos-de-exito" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resultados que Hablan por Sí Mismos</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="card testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <blockquote>"Álvarez y Arancibia fue clave en nuestra primera ronda de levantamiento de capital. Su agilidad y comprensión del ecosistema startup nos ahorró tiempo y recursos valiosos."</blockquote>
+                        <cite>— CEO de una Fintech Chilena</cite>
+                    </div>
+                    <div class="card testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <blockquote>"Implementaron toda nuestra política de protección de datos en tiempo récord, con una claridad que nunca habíamos tenido de un estudio de abogados tradicional."</blockquote>
+                        <cite>— Gerente de Operaciones de un E-commerce</cite>
+                    </div>
+                    <div class="card testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <blockquote>"Su modelo de asesoría flexible se adapta perfectamente a nuestras necesidades cambiantes. Son verdaderos socios estratégicos de nuestro negocio."</blockquote>
+                        <cite>— Fundador de una Startup Tecnológica</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================
+        SECCIÓN CONTACTO
+        ======================== -->
+        <section id="contacto" class="section bg-dark">
+            <div class="container">
+                <div class="section-title text-light">
+                    <h2>Hablemos de tu Próximo Desafío</h2>
+                    <p class="subtitle">Completa el formulario y uno de nuestros socios te contactará a la brevedad.</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto o consulta..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- =======================
+    FOOTER
+    ======================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Álvarez y Arancibia</h3>
+                <p>Nueva generación de servicios legales para la era digital. Flexibilidad, agilidad y tecnología al servicio de tu negocio.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Av. Apoquindo 3000, Las Condes<br>Santiago, Chile</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span>Alvarezyarancibiaabogados@gmail.com</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span>+56 9 1234 5678</span></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lexinnova. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Tu script JavaScript -->
+    <script src="script.js"></script>
+
+</body>
 </html>
